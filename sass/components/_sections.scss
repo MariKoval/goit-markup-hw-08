@@ -1,0 +1,54 @@
+.hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+.section-partners {
+    padding-top: 94px;
+    padding-bottom: 94px;}
+
+.section-team {
+        text-align: center;
+        background-color: $color-buttoncalm;
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        }
+      }
+
+.section-do {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+        padding-top: 0;
+        padding-bottom: 94px;
+        margin-left: auto;
+        margin-right: auto;}
+        
+.section-adv,
+.section-portf {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*.section-adv {
+@media screen and (min-width: 480px) 
+{width: 480px;}
+@media screen and (min-width: 768px) 
+{width: 768px;}
+@media screen and (min-width: 1200px) 
+{width: 1200px;}
+}*/
+
+.flex-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

@@ -1,0 +1,179 @@
+.burger-button {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  @media screen and (max-width: 1199px) {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  
+  &__icon {
+    display: block;
+    background-color: transparent;
+    
+    &:hover,
+    &:focus {
+      fill: $color-accent;
+      cursor: pointer;
+    }
+  }
+  &.is-open &__icon {
+    display: none;}
+
+  &__close {
+    display: none;
+  }
+  &.is-open &__close {
+    display: block;
+
+    &:hover,
+    &:focus {
+      fill: $color-accent;
+      cursor: pointer;
+    }
+   }
+   }
+}
+
+.button--primary {
+    padding: 10px 32px;
+    color: $color-base;
+    background-color: $color-accent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color $tr-time $tr-spread;
+
+    &:hover,
+    &:focus {
+      background-color: $color-buttonhover;
+    }
+  }
+
+    .flex-button {
+      @include centeredFlex();
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 0;
+    
+  }
+    .flex-button__button-secondary {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    font-family: inherit;
+    padding: 6px 22px 6px 22px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: $color-buttoncalm;
+
+    &--act {
+      color: $color-base;
+      background-color: $color-accent;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    &:hover,
+    &:focus {
+      color: $color-base;
+      background-color: $color-accent;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+  
+  .flex-button-element:not(:last-child) {
+    margin-right: 8px;
+  }
+  .flex-button-element button {
+    transition: color $tr-time $tr-spread $tr-delay,
+      background-color $tr-time $tr-spread;
+  }  
+
+  .button--submit {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $color-base;
+    background-color: $color-accent;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color $tr-time $tr-spread;
+
+    &:hover,
+    &:focus {
+      background-color: $color-buttonhover;
+    }
+  }
+  
+
+  
+  .button--mail {
+    @include centeredFlex();
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.88;
+    color: $color-base;
+    fill: $color-base;
+    background-color: $color-accent;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+
+    &:hover,
+    &:focus {
+      background-color: $color-buttonhover;
+    }
+  }
+  
+  .button__icon {
+    margin-left: 10px;
+  }
+
+    .close-button {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    background-color: $color-base;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color $tr-time $tr-spread;
+
+    &:hover,
+    &:focus {
+      fill: $color-accent;
+    }
+
+    &__cross {
+      text-align: center;
+      justify-content: center;
+    }
+  }

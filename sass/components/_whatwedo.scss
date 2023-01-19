@@ -1,0 +1,53 @@
+    .section-do {
+      display: none;
+        @media screen and (min-width: 1200px) {
+        padding-top: 0;
+        padding-bottom: 94px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+      }
+
+        .section-title {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+
+            @media screen and (min-width: 1200px) {
+              margin-bottom: 50px;
+            }
+          }
+
+      .whatwedo {
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        &__item {
+            position: relative;
+        }
+            &__element {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                @include centeredFlex ();
+                width: 100%;
+                height: 70px;
+                font-weight: 700;
+                line-height: 1.14;
+                text-align: center;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: $color-base;
+                background-color: rgba(47, 48, 58, 0.8);
+              }
+      }
+      
