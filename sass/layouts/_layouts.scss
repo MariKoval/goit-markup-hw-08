@@ -1,0 +1,90 @@
+footer,
+.hero {
+  background-color: $color-eyemagnet;
+  
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  align-content: center;
+}*/
+.container {
+@media screen and (min-width: 480px) 
+{width: 480px;}
+@media screen and (min-width: 768px) 
+{width: 768px;}
+@media screen and (min-width: 1200px) 
+{width: 1200px;}
+margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  align-content: center;
+}
+
+.modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 528px;
+  height: 100%;
+  max-height: 581px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 39px 40px 41px;
+  background-color: $color-base;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow-y: auto;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 450px; 
+    max-height: 609px;
+  }
+}
+
+.overlay {
+    min-height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/effective-solutions-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(1) rotate(720deg);
+    transition-duration: 250ms;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    /*overflow-y: scroll;*/
+
+    &.is-hidden {
+      transform: scale(0.5) rotate(0deg);
+      transition-duration: 250ms;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+  
+  
