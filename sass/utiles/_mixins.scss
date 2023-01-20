@@ -1,5 +1,31 @@
 @mixin centeredFlex($display: flex, $align: center, $justify: center) {
-    display: $display;
-    align-items: $align;
-    justify-content: $justify;
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin mobile {
+  @media screen and(min-width:480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and(min-width:768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and(min-width:1200px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    @content;
+  }
 }
