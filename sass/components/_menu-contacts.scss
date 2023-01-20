@@ -1,0 +1,32 @@
+.menu-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  @extend %list;
+  margin-bottom: 64px;
+}
+
+.menu-contacts__link {
+  @extend %link;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: $color-description;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.menu-contacts__link--accent {
+  font-size: 34px;
+  line-height: 40px;
+  color: $color-accent;
+
+  @include mobile {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}

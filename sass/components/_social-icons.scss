@@ -1,0 +1,64 @@
+.social-networks {
+  @include centeredFlex ();
+    gap: 10px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0;
+    list-style: none;
+    
+    &__item {
+        width: 44px;
+        height: 44px;
+        margin: 0;}
+
+        &__intouch {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            padding: 12px;
+            margin: 0;
+            border: none;
+            fill: $color-icons;
+            transition: fill $tr-time $tr-spread $tr-delay,
+              background-color $tr-time $tr-spread;
+          
+              &:hover,
+              &:focus {
+                background-color: $color-accent;
+                fill: $color-base;
+              }
+            }
+  }
+    
+  .social-icons {
+    @include centeredFlex ();
+    gap: 10px;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+    &__item {
+        width: 44px;
+        height: 44px;
+      }
+      &__intouch {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        padding: 12px;
+        margin: 0;
+        border: none;
+        fill: $color-base;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: fill $tr-time $tr-spread $tr-delay,
+          background-color $tr-time $tr-spread;
+
+          &:hover,
+          &:focus {
+            background-color: $color-accent;
+          }
+      }
+  }

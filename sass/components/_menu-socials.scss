@@ -1,0 +1,31 @@
+.menu-socials {
+  display: flex;
+  gap: 20px;
+  @extend %list;
+}
+
+.menu-socials__item {
+  position: relative;
+}
+
+.menu-socials__item:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.menu-socials__link {
+  @extend %link;
+  color: $color-accent;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}
