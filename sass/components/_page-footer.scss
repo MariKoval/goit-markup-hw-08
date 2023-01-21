@@ -4,10 +4,6 @@ footer > .container {
   @include desktop {
     text-align: left;
   }
-
-  /*@media screen and (min-width: 1200px) {
-    @include centeredFlex($align: baseline);
-  }*/
 }
 
 .footer-container {
@@ -44,19 +40,6 @@ footer > .container {
   }
 }
 
-/*.footer-content {
-  // margin-bottom: 60px;
-  // @media screen and (min-width: 1200px) {
-  //   margin-bottom: 0;
-  // }
-}*/
-
-/*.icons-container {
-  // margin-bottom: 60px;
-  // @media screen and (min-width: 1200px) {
-  //   margin-bottom: 0;
-  // }
-}*/
 .join {
   color: $color-base;
   font-style: normal;
